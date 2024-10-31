@@ -12,12 +12,10 @@ public class Main {
       
       if(int1 < -90 || int1 > 90){
         System.out.println("latitude is incorrect");
+      }
       if(int2 < -180 || int2 > 180){
           System.out.println("longitude is incorrect");
         }
-        
-  
-      }
       else
       {
         System.out.println("The location:" + int1 + " , " + int2);
