@@ -1,27 +1,18 @@
-import java.util.Scanner;
 
 public class Main {
        public static void main(String[] args)
-       {
-          Scanner input = new Scanner(System.in);
-          
-          System.out.println("latitude: ");
-          double latitude = input.nextDouble();
-          System.out.println("longitude: ");
-          double longitude = input.nextDouble();
-          
-          if (latitude < -90 || latitude > 90) {
-             System.out.println("latitude is incorrect");
-          }
-          if (longitude < -180 || longitude > 180) {
-             System.out.println("longitude is incorrect");
-          }
-          
-          if (latitude >= -90 && latitude <= 90 && longitude >= -180 && longitude <= 180) {
-             System.out.println("The location: " + latitude + " , " + longitude);
-          }
+     {
+         int x = 13;
+         int y = 13;
+         if (x > y && (2 * x / 3 + 3 * y / 4 == x / 3 * 2 + y / 4 * 3)){
+            System.out.print("yes");
+         }
+
+         else{
+            System.out.print("no");
+         }
        }
-    }
+      }
 
     
 
