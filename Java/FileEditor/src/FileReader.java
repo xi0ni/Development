@@ -1,10 +1,5 @@
 public class FileReader {
     private String str;
-
-    public FileReader(String str){
-
-    }
-
     public static void main(String[] args) {
         
     }
