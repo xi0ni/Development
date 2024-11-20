@@ -1,13 +1,19 @@
 
 public class Main {
     public static void main(String[] args) {
-        String str = "thinking";
-        String start = str.substring(0,2);
-        String end = str.substring(str.length() - 3);
+        int n = 14;
+        while(!(n%3 == 0 && n%5 == 0 )){
+            System.out.println(n);
+            n += 2;
+        }
 
+        int a = 0;
+        int b = 0;
 
-        System.out.println(str);
-        System.out.println(start);
-        System.out.println(end);
+        while(a < 5 && b < 3 ){
+            System.out.println(a + " " + b);
+            a++;
+            b++;
+        }
     }
 }
