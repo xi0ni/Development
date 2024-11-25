@@ -1,10 +1,6 @@
-
-
-
 public class Main {
     public static void main(String[] args) {
-       int x = 9;
-       x /= 10;
-       System.out.println(x);
+        Test x = new Test(123456789); 
+        x.initialize();         
     }
 }
