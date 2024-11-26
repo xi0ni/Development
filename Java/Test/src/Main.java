@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-            int n = 10; 
-            int sum = 0;
-            for (int i = 1; i <= n; i += 2) {
-                sum += i; 
+        int num = 20; // Starting number (inclusive)
+        while (num >= 0) {
+            if (num % 2 == 0) {
+                System.out.println(num);
             }
-            System.out.println(sum);
+            num--;
+        }
+
+        for (int i = 20; i >= 0; i--) { 
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
         }
         
 }
