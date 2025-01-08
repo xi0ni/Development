@@ -1,6 +1,7 @@
 import random
-from word_list import words
 
+
+words = ("hello", "test", "george")
 random_word = random.choice(words)
 random_word1 = random_word
 random_word = list(random_word)
