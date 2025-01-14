@@ -1,10 +1,13 @@
 public class Test {
     public static void main(String[] args) {
-        int x = 1;
-        while(x+2 <5){
-            System.out.println(x+" ");
-
+        for (int k = 1; k <= 20; k++) {
+           int n = (int)(40*Math.random());
+           if(n%2 == 0) {
+               System.out.println(n + " is even");
+           } else {
+               System.out.println(n + " is odd");
+           }
         }
-        System.out.println("done");
     }
+
 }

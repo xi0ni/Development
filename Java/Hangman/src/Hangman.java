@@ -1,3 +1,6 @@
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,16 +16,19 @@ public class Hangman {
         this.x = true;
         this.guesses = 5;
         this.placeholder = " ";
-
-        String[] words = { "george", "apple", "banana" };
         Random random = new Random();
-        this.word = words[random.nextInt(words.length)];
+        try {
+            List<String> words = Files.readAllLines(Paths.get("WordFile.txt"));
+            this.word = words.get(random.nextInt(words.size()));
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
 
         for (int i = 0; i < (word.length() - 1); i++) {
             this.placeholder += "-";
         }
 
-        System.out.println("placeholder: " + this.placeholder);
+        System.out.println("word: " + this.placeholder);
         while (x == true) {
             System.out.print("pick a letter: ");
             String letter = input.nextLine();
@@ -46,11 +52,12 @@ public class Hangman {
 
                 if (this.guesses == 0) {
                     System.out.println("you lose");
+                    System.out.println("the word was: " + this.word);
                     x = false;
                 }
             }
 
-            System.out.println("placeholder: " + this.placeholder);
+            System.out.println("word: " + this.placeholder);
 
             if (letter.equals("stop")) {
                 x = false;
@@ -59,7 +66,13 @@ public class Hangman {
     }
 
     public void initialize() {
-
     }
 
+
+    public static void main(String[] args) {
+        Hangman i = new Hangman();
+        i.initialize();
+    
+        
+    }
 }
