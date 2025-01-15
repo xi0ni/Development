@@ -20,8 +20,10 @@ public class Hangman {
         try {
             List<String> words = Files.readAllLines(Paths.get("WordFile.txt"));
             this.word = words.get(random.nextInt(words.size()));
+            if (this.word.length() < 3) {
+                this.word = words.get(random.nextInt(words.size()));
+            }
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
         }
 
         for (int i = 0; i < (word.length() - 1); i++) {
@@ -68,11 +70,9 @@ public class Hangman {
     public void initialize() {
     }
 
-
     public static void main(String[] args) {
         Hangman i = new Hangman();
         i.initialize();
-    
-        
+
     }
 }
