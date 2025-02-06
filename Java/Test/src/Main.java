@@ -1,13 +1,10 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        int x = 0;
-        while (x < 5) {
-            int y = 5;
-            while (x < y) {
-                y--;
-                x++;
-            }
-            System.out.print(y + " ");
-        }
+        int[] array = {12, 75, 3, 17, 65, 22};
+        array[3]= 100;
+        System.out.println(Arrays.toString(array));     
+       }
     }
-}
+
