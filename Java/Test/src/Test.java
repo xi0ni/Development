@@ -1,13 +1,14 @@
-public class Test {
-    public static void main(String[] args) {
-        for (int k = 1; k <= 20; k++) {
-           int n = (int)(40*Math.random());
-           if(n%2 == 0) {
-               System.out.println(n + " is even");
-           } else {
-               System.out.println(n + " is odd");
-           }
-        }
-    }
 
-}
+import java.util.ArrayList;
+
+public class Test {      
+static void shiftLeft(ArrayList<String> words){
+  String temp = null;
+  if (words.size() > 1) { 
+    String first = words.remove(0);  
+    words.add(first);  
+      }
+
+    System.out.println(words);
+    }
+} 
