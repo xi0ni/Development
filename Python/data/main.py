@@ -37,6 +37,7 @@ while info != "stop":
             if change in ("yes", "y"):
                 value = (
                     input("Which value would you like to change? ").strip().capitalize()
+                    # there might be an issue here with the changes not reflectin on when i call the cereal again
                 )
                 if value in header:
                     new_val = input(f"Enter new value for {value}: ")
