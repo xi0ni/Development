@@ -59,6 +59,8 @@ minute_rate = 0.25
 message_rate = 0.15
 nine_one_one_call = 0.44
 sales_tax = 0.05
+extra_minutes = 0
+extra_messages = 0
 
 minutes_used = float(input("please input the number of minutes used: "))
 messages_used = float(input("please input the number of messages sent: "))

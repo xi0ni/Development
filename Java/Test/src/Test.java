@@ -1,14 +1,31 @@
 
 import java.util.ArrayList;
 
-public class Test {      
-static void shiftLeft(ArrayList<String> words){
-  String temp = null;
-  if (words.size() > 1) { 
-    String first = words.remove(0);  
-    words.add(first);  
-      }
+public class Test {
+  private double balance;
 
-    System.out.println(words);
-    }
-} 
+  public Test() {
+      balance = 0;
+  }
+
+  public Test(double acctBalance) {
+      balance = acctBalance;
+  }
+
+  public void deposit(double amount) {
+      balance += amount;
+  }
+
+  public void withdraw(double amount) {
+      balance -= amount;
+  }
+
+  public double getBalance() {
+      return balance;
+  }
+}
+
+
+
+
+
