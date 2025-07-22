@@ -1,7 +1,7 @@
 num = int(input("input a number: "))
 list = [num]
 for x in range(4):
-    num = num + 1
+    num += 1 
     list.append(num)
 
 print(list)
