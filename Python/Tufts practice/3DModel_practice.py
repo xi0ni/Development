@@ -31,9 +31,10 @@ player = Entity(
     color=color.red,
 )
 
-
 box = Entity(
     model="sphere",
+    # color=color.red,
+    # color=rgb(1, 0, 0),
     scale=0.3,
     texture="models/ball-01.jpg",
     texture_scale=(1, 1),
@@ -42,26 +43,18 @@ box = Entity(
     shader=lit_with_shadows_shader,
 )
 box.direction = 3
-
-small_ball = Entity(
-    parent=box,
-    model="sphere",
-    scale=1,
-    texture="models/ball-01.jpg",
-    texture_scale=(1, 1),
-    position=(0.4, 1, 0),
-    shader=lit_with_shadows_shader,
-)
-
 goalkeeper.direction = 1
+
 
 floor = Entity(
     model="plane",
     scale=10,
     texture="grass",
     color=color.green,
+    # rotation=(-45, 45, 0),
     shader=lit_with_shadows_shader,
 )
+
 
 dl = DirectionalLight(shadows=True)
 dl.position = (0, 5, 0)
@@ -71,8 +64,13 @@ al = AmbientLight()
 al.position = (2, 2, 2)
 al.color = rgb(1, 1, 1)
 
+
 def update():
     box.rotation_x += 2
+
+    # box.x = sin(time.time())
+    # box.position = (sin(4*time.time()),0,0)
+    # box.x = (box.x + time.dt) % 4
 
     if box.x > 4 or box.x < -1:
         box.direction *= -1
