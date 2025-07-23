@@ -13,3 +13,4 @@ cd - : goes back one directory
 Git reflog : looks at modifications made
 realpath: tells you where you are 
 mv: mv [filename] and then the path to where you want to put it
+cd .. :
