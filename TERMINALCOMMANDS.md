@@ -13,4 +13,5 @@ cd - : goes back one directory
 Git reflog : looks at modifications made
 realpath: tells you where you are 
 mv: mv [filename] and then the path to where you want to put it
-cd .. :
+cd .. : goes back a directory
+git revert -m 1 [number] : reverts a commit if you make a mistake. where it says number go to the website and copy the id number and letters
