@@ -117,7 +117,7 @@ Image.fromarray(grey_img).show()
 """
 # ordered dithering variable
 d = d2
-mod = mod = d.shape[0]
+mod = d.shape[0]
 
 grey_img = np.array(img.convert("L"))
 
