@@ -131,3 +131,6 @@ for y in range(0, grey_img.shape[0], 4):
 
 
 Image.fromarray(grey_img).show()
+
+
+#just testing lol
