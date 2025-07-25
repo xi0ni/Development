@@ -1,6 +1,8 @@
 import turtle as t
 import math
 
+t.tracer(False)
+#   t.update() put this somewhere idk where but itll make it instant gotta fix later
 
 def bowling_game():
     t.speed(1000)
