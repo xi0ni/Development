@@ -15,3 +15,4 @@ realpath: tells you where you are
 mv: mv [filename] and then the path to where you want to put it
 cd .. : goes back a directory
 git revert -m 1 [number] : reverts a commit if you make a mistake. where it says number go to the website and copy the id number and letters
+git commit -m "commit message here" : commits changes made to files in a repo

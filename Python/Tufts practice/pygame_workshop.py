@@ -22,7 +22,7 @@ def main():
 
     while True:
         clock.tick(60)  # 24 FPS
-
+        
         for event in pygame.event.get():
             match event.type:
                 case pygame.QUIT:
